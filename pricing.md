@@ -28,7 +28,7 @@ subcollection: vpc-on-classic
 ## Pricing for internet data transfer with IBM Cloud™ Virtual Private Cloud
 The table summarizes the pricing for internet data transfer with {{site.data.keyword.cloud}} Virtual Private Cloud. Remember that there is no charge for traffic between VPC and other Classic IBM Cloud services. Also, for PayGo services, the service tiers are bound to your account, not to any specific VPC instance. Amounts are shown in U.S. dollars.
 
-Separate pricing applies for [virtual server instances](#pricing-for-virtual-servers-for-vpc) and [block storage](#block-storage-pricing) used within your IBM Cloud VPC.
+Separate pricing applies for [virtual server instances](#pricing-for-virtual-servers-for-vpc) and [block storage](#pricing-for-block-storage-for-vpc) used within your IBM Cloud VPC.
 
 ### Free allowances for internet data transfer
 {: #free-allowances-for-internet-data-transfer}
@@ -251,7 +251,7 @@ Suspended virtual servers will continue to count towards your account-wide devic
 
 
 ## Pricing for Block Storage for VPC
-{: #block-storage-pricing}
+{: #pricing-for-block-storage-for-vpc}
 
 Pricing for {{site.data.keyword.block_storage_is_short}} is based on the capacity or the IOPS that was provisioned, depending on which storage profile you chose.  The published monthly rate is [calculated on an hourly basis](#how-are-charges-calculated).
 
