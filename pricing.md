@@ -107,7 +107,7 @@ Data transfer to the internet as a result of using VPNaaS is charged as regular 
 
 
 
-## Pricing for  
+## Pricing for Virtual Servers for VPC
 {: #pricing-for-virtual-servers-for-vpc}
 [comment]: # (linked help topic)
 
