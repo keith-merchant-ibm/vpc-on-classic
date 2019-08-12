@@ -106,6 +106,7 @@ Data transfer to the internet as a result of using VPNaaS is charged as regular 
 
 
 
+
 ## Pricing for  
 {: #pricing-for-virtual-servers-for-vpc}
 [comment]: # (linked help topic)
@@ -113,6 +114,7 @@ Data transfer to the internet as a result of using VPNaaS is charged as regular 
 
 {{site.data.keyword.vsi_is_full}} is offered in select regions with up to 62 vCPU and 248 GB RAM to fit any workload need. You're billed at an hourly rate only, with discounts applied the longer your instance is running. Virtual server usage times are calculated per second, for both the in use time and suspended time of your instance. For example, if your instance runs for 45 minutes and 32 seconds, you're billed for 45 minutes and 32 seconds.
 {:shortdesc}
+
 
 ### Sustained usage
 {: #sustained-usage}
@@ -194,6 +196,7 @@ Review the following table for details on how suspend billing impacts various re
 
 Usage times are calculated per second, for both the in use time and suspended time of your virtual server instance. Even if you never initiate the suspend billing feature by powering off your instance, the billing is calculated per second of the instance's lifecycle. 
 {:note}
+
 
 ##### Suspend billing and sustained usage discounts
 {: #suspend-billing-and-sustained-usage-discounts}
