@@ -25,13 +25,16 @@ subcollection: vpc-on-classic
 
 # Pricing for VPC
 {: #pricing-for-vpc}
-## Pricing for internet data transfer with IBM Cloud™ Virtual Private Cloud
-The table summarizes the pricing for internet data transfer with {{site.data.keyword.cloud}} Virtual Private Cloud. Remember that there is no charge for traffic between VPC and other Classic IBM Cloud services. Also, for PayGo services, the service tiers are bound to your account, not to any specific VPC instance. Amounts are shown in U.S. dollars.
 
-Separate pricing applies for [virtual server instances](#pricing-for-virtual-servers-for-vpc) and [block storage](#pricing-for-block-storage-for-vpc) used within your IBM Cloud VPC.
+The following charges apply to your use of {{site.data.keyword.cloud}} Virtual Private Cloud. For PayGo services, the service tiers are bound to your account, not to any specific VPC instance. Amounts are shown in U.S. dollars.
+
+## Pricing for internet data transfer with IBM Cloud™ Virtual Private Cloud
+The table summarizes the pricing for internet data transfer with {{site.data.keyword.cloud}} Virtual Private Cloud. Remember that there is no charge for traffic within a VPC and other Classic IBM Cloud services (within the IBM data centers). 
 
 ### Free allowances for internet data transfer
 {: #free-allowances-for-internet-data-transfer}
+
+Traffic within your VPC is free as well as the use of public gateway. 
 
 | Data transfer |  Cost for all IBM Cloud VPC Customers |
 |---------------|------------------|
@@ -39,13 +42,10 @@ Separate pricing applies for [virtual server instances](#pricing-for-virtual-ser
 | Between zones in the same region | Free |
 | Use of public gateway | Free (Charged only for the floating IP used by the PGW) |
 
-### Floating IP pricing
-{: #floating-ip-pricing}
-
-A floating IP is charged at the rate of $1 (U.S.) per month, starting when it is reserved. The fee is charged even if the floating IP is not associated to a VSI or not in use. The $1 for the monthly fee is charged even if the floating IP is reserved for only a few days.
-
 ### Basic PayGo pricing for internet data transfer
 {: #basic-paygo-pricing-for-internet-transfer}
+
+For traffic leaving the VPC, the following pricing applies.
 
 | Data transfer | Amount of data | PayGo pricing (usa)| PayGo pricing (eu-de)|PayGo pricing (eu-gb)|PayGo pricing (jp-tok)|PayGo pricing (au-syd)|
 |-----------|-----------|------------------|------------------|------------------|------------------|------------------|
@@ -62,7 +62,12 @@ When you create a new VPC, it may take up to an hour for initial billing charges
 If you have a public gateway or Floating IP, you may still see some minimal egress charges, even if you have not sent out any egress traffic during that time. These charges are for ARP traffic, which is necessary to operate your account.
 {: important}
 
-### LBaaS for VPC pricing
+### Pricing for Floating IPs
+{: #floating-ip-pricing}
+
+A floating IP is charged at the rate of $1 (U.S.) per month, starting when it is reserved. The fee is charged even if the floating IP is not associated to a VSI or not in use. The $1 for the monthly fee is charged even if the floating IP is reserved for only a few days.
+
+## Pricing for Load Balancers for VPC 
 {: #lb-for-vpc-pricing}
 
 Load Balancers for VPC pricing is based on the following metrics, calculated monthly:
@@ -89,7 +94,7 @@ The following chart shows an example for a customer using 4500 GB per month for 
 **Table 1: Monthly Cost Example. The total charge for this scenario is $54 (USD) per month.**
 
 
-### VPN for VPC pricing
+## Pricing for VPN for VPC 
 {: #vpn-for-vpc-pricing}
 
 | Region | Connection (Peer) per hour | Instance (Gateway) per hour |
@@ -100,11 +105,6 @@ The following chart shows an example for a customer using 4500 GB per month for 
 
 Data transfer to the internet as a result of using VPNaaS is charged as regular data transfer, outbound to the internet, billed at the VPC level.
 {: note}
-
-
-
-
-
 
 
 ## Pricing for Virtual Servers for VPC
